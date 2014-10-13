@@ -9,9 +9,10 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+var engine = require('ejs-locals');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+//app.engine('html', engine);
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
